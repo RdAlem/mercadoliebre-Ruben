@@ -1,0 +1,115 @@
+*{  
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+article{
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: column;
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+}
+
+main{
+    width: 90vw;
+}
+
+img{ 
+    text-align: center;
+}
+
+header{
+    background-color: #EAC926;
+}
+
+.cuerpos {
+    font-size: 12px;
+    text-align: center;
+}
+
+.titulares {
+    font-size: 24px;
+}
+
+.precios {
+    font-size: 18px;
+}
+
+.divlogocamion{
+    align-self: flex-end;
+}
+
+.logocamion{
+    border-radius: 50%;
+    border: solid 2px lightgreen;
+    color: lightgreen;
+}
+
+.descuentos{
+    font-size: 75%;
+    color: lightgreen;
+    font-weight: bold;
+    align-self: flex-end;
+}
+
+.desc {
+    font-size: 16px;
+}
+
+.burger-menu{
+    display: inline-flex;
+    background-color: #1259c3;
+    padding: 7px;
+    color: #ffffff;
+    margin-bottom: 10px;
+    margin-left: 50%;
+    border-radius: 4px;
+}
+
+.iconos{
+    color: #1259c3;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.texto-iconos {
+    font-weight: bold;
+    text-align: center;
+}
+
+.banner{
+    width: 100vw;
+}
+
+.preciosydescuentos{
+    display: flex;
+}
+
+@media (max-width: 361px){ /* Mobile */
+    .mobile-none{
+        display: none;
+    }
+}
+    
+ @media (min-width: 361px){ /* Tablets */
+    .tablets-none{
+        display: none;
+    }
+    article{
+         box-shadow: 0px 0px 5px 3px rgba(100,100,100,1);
+         width: 50%;
+    }
+}
+@media (min-width: 769px){ /* Laptop */
+    .laptop-none{
+        display: none;
+    }
+    article{
+        box-shadow: 0px 0px 5px 3px rgba(100,100,100,1);
+        width: 25vw;
+    }
+}
