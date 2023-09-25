@@ -13,10 +13,6 @@ article{
     padding: 15px;
 }
 
-main{
-    width: 90vw;
-}
-
 img{ 
     text-align: center;
 }
@@ -43,9 +39,13 @@ header{
 }
 
 .logocamion{
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
     border-radius: 50%;
-    border: solid 2px lightgreen;
-    color: lightgreen;
 }
 
 .descuentos{
@@ -53,10 +53,12 @@ header{
     color: lightgreen;
     font-weight: bold;
     align-self: flex-end;
+    font-size: 16px;
 }
 
-.desc {
+.descripcion {
     font-size: 16px;
+    align-self: stretch;
 }
 
 .burger-menu{
@@ -90,26 +92,61 @@ header{
 }
 
 @media (max-width: 361px){ /* Mobile */
+
     .mobile-none{
         display: none;
     }
+
 }
     
  @media (min-width: 361px){ /* Tablets */
     .tablets-none{
         display: none;
     }
+
+    section{
+        margin: 2%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
     article{
-         box-shadow: 0px 0px 5px 3px rgba(100,100,100,1);
-         width: 50%;
+        box-shadow: 0px 0px 5px 3px rgba(100,100,100,1);
+        width: calc(48%);
+    }
+
+    nav{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .logoml{
+        width: calc(33.3%);
+    }
+    .searchbuttom{
+        width: 33.3%;
+    }
+    
+    .texthead{
+        width: calc(33.3%);
+    }
+    .urls1{
+        width: 50%;
+        text-align: left;
+    }
+    .urls2{
+        width: 50%;
+        text-align: right;
     }
 }
+
 @media (min-width: 769px){ /* Laptop */
     .laptop-none{
         display: none;
     }
     article{
         box-shadow: 0px 0px 5px 3px rgba(100,100,100,1);
-        width: 25vw;
+        width: calc(23%);
     }
 }
