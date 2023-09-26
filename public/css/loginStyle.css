@@ -1,0 +1,35 @@
+
+.formlogin{
+    border-radius: 10px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 5px 3px rgba(100,100,100,1);
+    width: 90vw;
+    max-width: 500px;
+    min-height: 400px;
+    justify-content: space-around;
+}
+
+.labellogin{
+    margin: 5px;
+}
+
+.inputlogin{
+    margin: 10px auto;
+    width: 90%;
+    background-color: lightgray;
+    border-radius: 5px;
+}
+
+.buttonlogin{
+    border-radius: 5px;
+    margin: 5px auto;
+    min-width: 80px;
+    background-color: green;
+    color: white;
+}
+
+main>form>button:hover{
+    background-color: #0022AA;
+}

@@ -49,6 +49,14 @@ header{
     border-radius: 50%;
 }
 
+@keyframes rotacion {
+    100% {transform: rotate(-90deg);}
+}
+
+.fa-truck:hover {
+    animation: rotacion 1s infinite;
+}
+
 .descuentos{
     font-size: 75%;
     color: lightgreen;
@@ -57,9 +65,10 @@ header{
     font-size: 16px;
 }
 
-.descripcion {
+.descripcion{
     font-size: 16px;
     align-self: stretch;
+    display: none;
 }
 
 .burger-menu{
@@ -92,19 +101,25 @@ header{
     display: flex;
 }
 
-
+footer>nav{
+    display: block;
+}
 
 @media (max-width: 361px){ /* Mobile */
+
     .mobile-none{
         display: none;
     }
 
     .logoml{
+        text-align: center;
         width: 45%;
     }
     
     .searchbuttom{
-        width: 45%;
+        text-align: center;
+        display: inline;
+        width: 40%;
     }
     
     .texthead{
@@ -127,10 +142,16 @@ header{
         flex-wrap: wrap;
         justify-content: space-between;
     }
-
+    
     article{
-        box-shadow: 0px 0px 5px 3px rgba(100,100,100,1);
         width: calc(48%);
+    }
+
+    article:hover{
+        box-shadow: 0px 0px 5px 3px rgba(100,100,100,1);
+        .descripcion{
+            display: block;
+        }
     }
 
     nav{
@@ -138,33 +159,56 @@ header{
         flex-wrap: wrap;
         justify-content: space-between;
     }
+
     .logoml{
         width: calc(33.3%);
     }
-    .searchbuttom{
 
+    .searchbuttom{
+        text-align: center;
+        justify-content: center;
+        margin: auto;
         width: 33.3%;
     }
     
     .texthead{
+        font-size: 90%;
+        text-align: center;
+        margin: auto;
         width: calc(33.3%);
     }
+
     .urls1{
+        font-size: 90%;
         width: 50%;
         text-align: left;
     }
+
     .urls2{
+        font-size: 90%;
         width: 50%;
         text-align: right;
     }
 }
 
 @media (min-width: 769px){ /* Laptop */
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    footer>nav>div>i:hover{
+        color: yellow;
+    }
+    footer>nav{
+        margin-bottom: 10px;
+        width: 32vw;
+    }
+
     .laptop-none{
         display: none;
     }
+
     article{
-        box-shadow: 0px 0px 5px 3px rgba(100,100,100,1);
         width: calc(23%);
     }
 }

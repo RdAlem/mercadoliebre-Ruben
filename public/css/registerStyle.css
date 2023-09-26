@@ -29,10 +29,15 @@
     border-radius: 5px;
     margin: 5px auto;
     min-width: 80px;
-    background-color: blue;
+    background-color: green;
     color: white;
+}
+
+main>form>button:hover{
+    background-color: #0022AA;
 }
 
 .checkbox{
     margin-left: 5%;
 }
+
