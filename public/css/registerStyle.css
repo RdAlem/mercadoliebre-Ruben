@@ -1,0 +1,38 @@
+.mainregister{
+    display: flex;
+    align-content: center;
+}
+
+.formregister{
+    border-radius: 10px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 5px 3px rgba(100,100,100,1);
+    width: 90vw;
+    max-width: 500px;
+}
+
+.inputregister{
+    margin: 10px auto;
+    width: 90%;
+    background-color: lightgray;
+    border-radius: 5px;
+}
+
+.labelregister{
+    margin: 5px;
+}
+
+.buttonregister{
+
+    border-radius: 5px;
+    margin: 5px auto;
+    min-width: 80px;
+    background-color: blue;
+    color: white;
+}
+
+.checkbox{
+    margin-left: 5%;
+}

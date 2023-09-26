@@ -38,13 +38,14 @@ header{
     align-self: flex-end;
 }
 
-.logocamion{
+.fa-truck{
     font-size: 16px;
     padding: 5px;
     width: 30px;
     height: 30px;
+    color: #39b54a;
     border: 1px solid #39b54a;
-    background-color: #FFF;
+    background-color: white;
     border-radius: 50%;
 }
 
@@ -91,15 +92,31 @@ header{
     display: flex;
 }
 
-@media (max-width: 361px){ /* Mobile */
 
+
+@media (max-width: 361px){ /* Mobile */
     .mobile-none{
         display: none;
     }
 
+    .logoml{
+        width: 45%;
+    }
+    
+    .searchbuttom{
+        width: 45%;
+    }
+    
+    .texthead{
+        margin: 10px auto;
+    }
 }
     
  @media (min-width: 361px){ /* Tablets */
+    .burger-menu{
+        display: none;
+    }
+
     .tablets-none{
         display: none;
     }
@@ -125,6 +142,7 @@ header{
         width: calc(33.3%);
     }
     .searchbuttom{
+
         width: 33.3%;
     }
     
